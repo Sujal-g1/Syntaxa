@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 
 import IntroPage from "../pages/IntroPage";
 import Homepage from "../pages/Homepage";
+import Workspace from "../pages/Workspace";
+
 
 function AppRoutes() {
   return (
@@ -12,6 +14,8 @@ function AppRoutes() {
 
       {/* Main Homepage */}
       <Route path="/home" element={<Homepage />} />
+
+      <Route path="/workspace" element={<Workspace />} />
 
     </Routes>
   );

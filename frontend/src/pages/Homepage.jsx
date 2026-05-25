@@ -4,6 +4,7 @@ import HeroSection from "../components/hero/HeroSection";
 import ProblemSection from "../components/problem/ProblemSection";
 import LandingPage from "./LandingPage";
 import FeaturesSection from "../components/features/FeaturesSection";
+import IdePreviewSection from "../components/ide-preview/IdePreviewSection";
 
 export default function Homepage() {
   return (
@@ -20,9 +21,11 @@ export default function Homepage() {
 
         {/* Hero */}
         <HeroSection />
+        <IdePreviewSection />
         <ProblemSection />
         <FeaturesSection />
         {/* <LandingPage /> */}
+        
 
 
       </main>

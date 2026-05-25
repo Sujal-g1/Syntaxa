@@ -9,6 +9,7 @@ export default function FeatureCardSmall({
     <motion.div
       whileHover={{
         y: -6,
+        scale: 1.02,
       }}
       transition={{
         duration: 0.3,
@@ -63,6 +64,45 @@ export default function FeatureCardSmall({
           bg-black/20
           p-4
         ">
+
+<div className="flex gap-2 mb-4">
+
+<motion.div
+  animate={{
+    opacity: [0.3, 1, 0.3],
+  }}
+  transition={{
+    duration: 1.5,
+    repeat: Infinity,
+  }}
+  className="w-2 h-2 rounded-full bg-green-400"
+/>
+
+<motion.div
+  animate={{
+    opacity: [0.3, 1, 0.3],
+  }}
+  transition={{
+    duration: 1.5,
+    delay: 0.3,
+    repeat: Infinity,
+  }}
+  className="w-2 h-2 rounded-full bg-cyan-400"
+/>
+
+<motion.div
+  animate={{
+    opacity: [0.3, 1, 0.3],
+  }}
+  transition={{
+    duration: 1.5,
+    delay: 0.6,
+    repeat: Infinity,
+  }}
+  className="w-2 h-2 rounded-full bg-purple-400"
+/>
+
+</div>
 
           {type === "debug" && (
             <div className="space-y-3">

@@ -3,8 +3,12 @@ import { motion } from "framer-motion";
 
 import CodeWindow from "./CodeWindow";
 import ChatWindow from "./ChatWindow";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+
+ const navigate = useNavigate();
+
   return (
     <section className="max-w-7xl mx-auto px-6 pt-20 lg:pt-28">
 
@@ -59,9 +63,13 @@ export default function HeroSection() {
             className="flex items-center gap-5 mt-10"
           >
 
-            <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold hover:scale-[1.02] transition">
+            <button
+              onClick={() => navigate("/workspace")}
+              className="bg-white text-black px-8 py-4 rounded-xl font-semibold hover:scale-[1.02] transition"
+            >
               Start Learning
             </button>
+       
 
             <button className="flex items-center gap-2 text-white/80 hover:text-white">
               Learn more <ArrowRight size={16} />
